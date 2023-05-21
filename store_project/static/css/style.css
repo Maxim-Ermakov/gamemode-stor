@@ -1,0 +1,12 @@
+.h-90{
+    min-height: 90px;
+}
+
+.logo{
+    border-radius: 100%;
+    width: 50px;
+}
+
+.gap-10{
+    gap: 10px;
+}

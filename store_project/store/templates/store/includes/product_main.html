@@ -1,0 +1,18 @@
+<main>
+    {% for products in product_list %}
+    <div class="card-group gap-10">
+        {% for product in products %}
+        <div class="card">
+            <a href="{{ product.get_absolute_url}}">
+                <img src="{{product.image.url}}"
+                class="card-img-top" alt="{{ product_title }}"></a>
+            <div class="card-body">
+                <h5 class="card-title">{{ product.title }}</h5>
+                <p class="card-text">{{ product.info|truncatewords:10 }}</p>
+                <p class="card-text">{{ product.price }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</main>

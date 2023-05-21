@@ -1,0 +1,8 @@
+{% extends 'store/index.html' %}
+{% block title %}
+Store/Home
+{% endblock title %}
+
+{% block content %}
+<h1>Привет, {{ order.name }}! Ваш заказ на {{ order.product.title }} находится в обработке.</h1>
+{% endblock content %}
